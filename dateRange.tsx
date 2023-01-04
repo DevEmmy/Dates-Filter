@@ -95,7 +95,12 @@ const getDaysInYear = (year: number) =>
     return ((year % 4 === 0 && year % 100 > 0) || year %400 == 0) ? 366 : 365;
 }
 
-let date2 = new Date();
-date2.setDate(date2.getDate() + 30); 
+let today = new Date()
+let date1 = new Date(2022, 11, 31)
+let date2 = new Date(2023, 0, 12)
+let date3 = new Date(2023, 1, 28)
+// console.log(date1)
 
-console.log(getDateArray(new Date(), date2, FilterType.EVERYDAY))
+console.log(getDateArray(new Date(), date1, FilterType.EVERYDAY))
+console.log(getDateArray(new Date(), date2, FilterType.MON_FRI))
+console.log(getDateArray(new Date(), date3, FilterType.WEEKEND))
