@@ -21,11 +21,11 @@ const createEvent = (accessToken: String, refreshToken: String, expiryDate: Date
         description: "Google add event testing.",
         start: {
           dateTime: start,
-          timeZone: 'Asia/kolkata',
+          timeZone: 'West Africa Time',
         },
         end: {
           dateTime: end,
-          timeZone: 'Asia/Kolkata',
+          timeZone: 'West Africa Time',
         },
       };
 
