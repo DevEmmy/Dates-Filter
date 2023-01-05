@@ -68,5 +68,9 @@ const getDaysInYear = (year) => {
 };
 let today = new Date();
 let date1 = new Date(2022, 11, 31);
-console.log(date1);
-// console.log(getDateArray(new Date(), date2, FilterType.EVERYDAY))
+let date2 = new Date(2023, 0, 12);
+let date3 = new Date(2023, 1, 28);
+// console.log(date1)
+console.log(getDateArray(new Date(), date1, FilterType.EVERYDAY));
+console.log(getDateArray(new Date(), date2, FilterType.MON_FRI));
+console.log(getDateArray(new Date(), date3, FilterType.WEEKEND));
