@@ -1,4 +1,5 @@
 # DatesFilter
+## new date
 
 This package is a filter that allows filtering of dates based on preferences from a list of options, which happens is represented by the enum FilterType:
 
